@@ -3,7 +3,7 @@
 #include <clocale>
 using namespace std;
 
-int err_n1() {
+int err_n() {
 	int m, ival = 1;
 	cin >> m;
 	while (ival == 1) {
@@ -71,9 +71,8 @@ int main() {
 	cout << "Введите вместимость рюкзака: ";
 	int W = err_wv();
 
-	int n;
 	cout << "Введите количество предметов: ";
-	n = err_n1();
+	int n = err_n();
 
 	int** w_v = new int* [n];
 	for (int i = 0; i < n; i++)
